@@ -991,9 +991,9 @@ WELC_HELP_TXT = (
     "Siz hətta təyin edə bilərsiniz images/gifs/videos/voice tərəfindən xoş mesaj kimi mesajlar "
     "istədiyiniz mediaya cavab vermək və zəng etmək `/setwelcome`."
 )
-restricts new members from sending media for 24 hours
+
 WELC_MUTE_HELP_TXT = (
-    "Qrupunuza qoşulan yeni insanları susdurmaq üçün botu əldə edə bilərsiniz və bununla da spambotların qrupunuzu doldurmasının qarşısını ala bilərsiniz. "
+  "Qrupunuza qoşulan yeni insanları susdurmaq üçün botu əldə edə bilərsiniz və bununla da spambotların qrupunuzu doldurmasının qarşısını ala bilərsiniz. "
     "Aşağıdakı variantlar mümkündür:\n"
     "• `/welcomemute soft`*:* yeni üzvlərin 24 saat ərzində media göndərməsini məhdudlaşdırır.\n"
     "• `/welcomemute strong`*:* yeni üzvlərin insan olduqlarını təsdiqləmək üçün düyməyə toxunana qədər səsini kəsir.\n"
