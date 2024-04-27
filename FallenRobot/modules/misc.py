@@ -6,27 +6,27 @@ from FallenRobot.modules.disable import DisableAbleCommandHandler
 from FallenRobot.modules.helper_funcs.chat_status import user_admin
 
 MARKDOWN_HELP = f"""
-Markdown is a very powerful formatting tool supported by telegram. {dispatcher.bot.first_name} has some enhancements, to make sure that \
-saved messages are correctly parsed, and to allow you to create buttons.
+Markdown telegram tərəfindən dəstəklənən çox güclü formatlama vasitəsidir. {dispatcher.bot.first_name} əmin olmaq üçün bəzi təkmilləşdirmələrə malikdir \
+saxlanmış mesajlar düzgün təhlil edilir və düymələr yaratmağa imkan verir.
 
-• <code>_italic_</code>: wrapping text with '_' will produce italic text
-• <code>*bold*</code>: wrapping text with '*' will produce bold text
-• <code>`code`</code>: wrapping text with '`' will produce monospaced text, also known as 'code'
-• <code>[sometext](someURL)</code>: this will create a link - the message will just show <code>sometext</code>, \
-and tapping on it will open the page at <code>someURL</code>.
+• <code>_italic_</code>: mətni '_' ilə bükmək kursiv mətn yaradacaq
+• <code>*bold*</code>: mətni '*' ilə bükmək qalın mətn yaradacaq
+• <code>`code`</code>: mətnin '`' ilə bükülməsi monoboşluqlu mətn yaradacaq 'code'
+• <code>[sometext](someURL)</code>: bu, bir keçid yaradacaq - mesaj sadəcə görünəcək <code>sometext</code>, \
+və üzərinə toxunmaq səhifəni açacaq <code>someURL</code>.
 <b>Example:</b><code>[test](example.com)</code>
 
-• <code>[buttontext](buttonurl:someURL)</code>: this is a special enhancement to allow users to have telegram \
-buttons in their markdown. <code>buttontext</code> will be what is displayed on the button, and <code>someurl</code> \
-will be the url which is opened.
+• <code>[buttontext](buttonurl:someURL)</code>: bu, istifadəçilərə teleqrama sahib olmaq üçün xüsusi təkmilləşdirmədir \
+onların işarələmələrindəki düymələr. <code>buttontext</code> düymədə göstərilənlər olacaq və <code>someurl</code> \
+açılan url olacaq.
 <b>Example:</b> <code>[This is a button](buttonurl:example.com)</code>
 
-If you want multiple buttons on the same line, use :same, as such:
+Eyni sətirdə bir neçə düyməni istəyirsinizsə, istifadə edin :same, kimi such:
 <code>[one](buttonurl://example.com)
 [two](buttonurl://google.com:same)</code>
-This will create two buttons on a single line, instead of one button per line.
+Bu, hər sətirdə bir düymə əvəzinə, bir sətirdə iki düymə yaradacaqdır.
 
-Keep in mind that your message <b>MUST</b> contain some text other than just a button!
+Mesajınız olduğunu unutmayın <b>olmalıdır</b> sadəcə düymədən başqa bəzi mətnləri ehtiva edir!
 """
 
 
@@ -49,24 +49,24 @@ def echo(update: Update, context: CallbackContext):
 def markdown_help_sender(update: Update):
     update.effective_message.reply_text(MARKDOWN_HELP, parse_mode=ParseMode.HTML)
     update.effective_message.reply_text(
-        "Try forwarding the following message to me, and you'll see, and Use #test!"
+        "Aşağıdakı mesajı mənə yönləndirməyə çalışın və siz görəcəksiniz və #test istifadə edin!"
     )
     update.effective_message.reply_text(
-        "/save test This is a markdown test. _italics_, *bold*, code, "
+        "/save test Bu işarələmə testidir. _italics_, *bold*, code, "
         "[URL](example.com) [button](buttonurl:github.com) "
         "[button2](buttonurl://google.com:same)"
     )
 
 
 def markdown_help(update: Update, context: CallbackContext):
-    if update.effective_chat.type != "private":
+    if update.effective_chat.type != "özəl":
         update.effective_message.reply_text(
-            "Contact me in pm",
+            "pm ilə əlaqə saxlayın",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            "Markdown help",
+                            "Markdown yardımı",
                             url=f"t.me/{context.bot.username}?start=markdownhelp",
                         )
                     ]
@@ -78,15 +78,15 @@ def markdown_help(update: Update, context: CallbackContext):
 
 
 __help__ = """
-*Available commands:*
+*Mövcud əmrlər:*
 *Markdown:*
- ❍ /markdownhelp*:* quick summary of how markdown works in telegram - can only be called in private chats
-*React:*
- ❍ /react*:* Reacts with a random reaction 
-*Urban Dictonary:*
- ❍ /ud <word>*:* Type the word or expression you want to search use
+ ❍ /markdownhelp*:* teleqramda markdownun necə işlədiyinə dair qısa xülasə - yalnız şəxsi söhbətlərdə zəng etmək olar
+*Reaksiya:*
+ ❍ /react*:* Təsadüfi reaksiya ilə reaksiya verir
+*Şəhər Diktoniyası:*
+ ❍ /ud <Söz>*:* Axtarmaq istədiyiniz sözü və ya ifadəni yazın
 *Wikipedia:*
- ❍ /wiki <query>*:* wikipedia your query
+ ❍ /wiki <Sorğu>*:* wikipedia sorğunuz
 """
 
 ECHO_HANDLER = DisableAbleCommandHandler(
@@ -97,7 +97,7 @@ MD_HELP_HANDLER = CommandHandler("markdownhelp", markdown_help, run_async=True)
 dispatcher.add_handler(ECHO_HANDLER)
 dispatcher.add_handler(MD_HELP_HANDLER)
 
-__mod_name__ = "Exᴛʀᴀs"
+__mod_name__ = "Əlavələr"
 __command_list__ = ["id", "echo"]
 __handlers__ = [
     ECHO_HANDLER,
