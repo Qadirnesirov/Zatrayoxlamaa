@@ -438,17 +438,17 @@ def Source_about_callback(update: Update, context: CallbackContext):
  Mənim Adım {BOT_NAME},
 Açıq mənbəli teleqram qrupu idarəetmə botuyam.*
 
-Zatranın köməyi ilə python dilində yazılmışdır :[ᴛᴇʟᴇᴛʜᴏɴ](https://github.com/LonamiWebs/Telethon)
-[ᴩʏʀᴏɢʀᴀᴍ](https://github.com/pyrogram/pyrogram)
-[ᴩʏᴛʜᴏɴ-ᴛᴇʟᴇɢʀᴀᴍ-ʙᴏᴛ](https://github.com/python-telegram-bot/python-telegram-bot)
+Zatranın köməyi ilə python dilində yazılmışdır :[Telemarafon](https://github.com/LonamiWebs/Telethon)
+[piroqram](https://github.com/pyrogram/pyrogram)
+[Python-teleqram-botu](https://github.com/python-telegram-bot/python-telegram-bot)
 Və istifadə [Sqlalchemy](https://www.sqlalchemy.org) Və [MongoDB](https://cloud.mongodb.com) Verilənlər bazası kimi.
 
 
-*ʜᴇʀᴇ ɪs ᴍʏ sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ :* [ɢɪᴛʜᴜʙ](https://github.com/Qadirnesirov)
+*Budur mənim mənbə kodum :* [ɢɪᴛʜᴜʙ](https://github.com/Qadirnesirov)
 
 
-{BOT_NAME} ɪs ʟɪᴄᴇɴsᴇᴅ ᴜɴᴅᴇʀ ᴛʜᴇ [ᴍɪᴛ ʟɪᴄᴇɴsᴇ](https://github.com/Qadirnesirov/ZatraBot/blob/master/LICENSE).
-© 2022 - 2023 | [sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ](https://t.me/{SUPPORT_CHAT}), Bütün hüquqlar qorunur.
+{BOT_NAME} Altında lisenziyaya malikdir [İlə lisenziyalıdır](https://github.com/Qadirnesirov/ZatraBot/blob/master/LICENSE).
+© 2022 - 2023 | [Köməkçi Qrupu](https://t.me/{SUPPORT_CHAT}), Bütün hüquqlar qorunur.
 """,
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
