@@ -122,7 +122,7 @@ Funksiya altındakı sahəni tapmaq üçün sorğunu c:d|f(x) kimi göndərin, b
 Kəsrləri hesablamaq üçün ifadələri say(üst) məxrəc kimi daxil edin. Məsələn, 2/4-ü emal etmək üçün ifadənizi 2(over)4 kimi göndərməlisiniz. Nəticə ifadəsi standart riyaziyyat qeydində olacaq (1/2, 3/4).
 """
 
-__mod_name__ = "Mᴀᴛʜs"
+__mod_name__ = "Riyaziyyat"
 
 SIMPLIFY_HANDLER = DisableAbleCommandHandler("math", simplify, run_async=True)
 FACTOR_HANDLER = DisableAbleCommandHandler("factor", factor, run_async=True)
