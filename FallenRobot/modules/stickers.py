@@ -26,7 +26,7 @@ def stickerid(update: Update, context: CallbackContext):
     msg = update.effective_message
     if msg.reply_to_message and msg.reply_to_message.sticker:
         update.effective_message.reply_text(
-            "Hey "
+            "Salam "
             + f"{mention_html(msg.from_user.id, msg.from_user.first_name)}"
             + ", Cavab verdiyiniz stiker id-dir :\n <code>"
             + escape(msg.reply_to_message.sticker.file_id)
@@ -359,7 +359,7 @@ def kang(update: Update, context: CallbackContext):
                 )
             print(e)
     else:
-        packs = "Lütfən, stikerə və ya şəklə cavab yazın ki, onu idarə edin!\nOh, yeri gəlmişkən. budur paketləriniz:\n"
+        packs = "Xaiş edirəm, stikerə və ya şəklə cavab yazın ki, onu idarə edin!\nOh, yeri gəlmişkən. budur paketləriniz:\n"
         if packnum > 0:
             firstpackname = "a" + str(user.id) + "_by_" + context.bot.username
             for i in range(0, packnum + 1):
@@ -459,7 +459,7 @@ __help__ = """
  ❍ /stickers*:* Döyüş stikerləri kataloqunda verilmiş termin üçün stikerləri tapın
 """
 
-__mod_name__ = "Sᴛɪᴄᴋᴇʀ"
+__mod_name__ = "Stiker"
 
 STICKERID_HANDLER = DisableAbleCommandHandler("stickerid", stickerid, run_async=True)
 GETSTICKER_HANDLER = DisableAbleCommandHandler("getsticker", getsticker, run_async=True)
