@@ -21,7 +21,7 @@ async def repo(_, message: Message):
 **» ᴘʏᴛʜᴏɴ ᴠᴇʀsɪʏᴀsı :** `{y()}`
 **» ᴠᴇʀsɪʏᴀ ᴋɪᴛᴀʙxᴀɴᴀsı:** `{o}` 
 **» Tᴇʟᴇᴍᴀʀᴀғᴏɴ ᴠᴇʀsɪʏᴀsıɴ :** `{s}` 
-**» Pɪʀᴏǫʀᴀᴍ ᴠᴇʀsɪʏᴀsıɴ :** `{z}`
+**» Pɪʀᴏǫʀᴀᴍ ᴠᴇʀsɪʏᴀsı :** `{z}`
 """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -29,7 +29,7 @@ async def repo(_, message: Message):
                     InlineKeyboardButton(" Qᴜʀᴜᴄᴜᴍ", user_id=OWNER_ID),
                     InlineKeyboardButton(
                         "ᴍəɴʙə",
-                        url="https://github.com/Qadirnesirov/ZatraNezarett",
+                        url="https://github.com/Qadirnesirov/ZatraNezaret",
                     ),
                 ]
             ]
