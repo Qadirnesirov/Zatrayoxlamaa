@@ -14,7 +14,7 @@ async def _(event):
     args = event.pattern_match.group(1)
 
     try:
-        geolocator = Nominatim(user_agent="FallenRobot")
+        geolocator = Nominatim(user_agent="Zatrabot")
         geoloc = geolocator.geocode(args)
         gm = f"https://www.google.com/maps/search/{geoloc.latitude},{geoloc.longitude}"
         await tbot.send_file(
@@ -24,17 +24,17 @@ async def _(event):
             ),
         )
         await event.reply(
-            f"ᴏᴘᴇɴ ᴡɪᴛʜ : [🌏ɢᴏᴏɢʟᴇ ᴍᴀᴘs]({gm})",
+            f"İlə aç : [🌏Google xəritələri]({gm})",
             link_preview=False,
         )
     except:
-        await event.reply("I can't find that")
+        await event.reply("Mən bunu tapa bilmirəm")
 
 
 __help__ = """
-Sends you the gps location of the given query...
+Sizə verilən sorğunun GPS yerini göndərir...
 
- ❍ /gps <location> *:* Get gps location.
+ ❍ /gps <location> *:* GPS məkanını əldə edin.
 """
 
 __mod_name__ = "Gᴘs"
