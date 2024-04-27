@@ -92,11 +92,11 @@ buttons = [
         InlineKeyboardButton(text="Kömək & Əmirlərim", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="❄ ᴀʙᴏᴜᴛ ❄", callback_data="fallen_"),
+        InlineKeyboardButton(text="Haqımda" callback_data="fallen_"),
         InlineKeyboardButton(text="Kömək Qrupu", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
-        InlineKeyboardButton(text="🥀 Qurucum 🥀", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text="✅ Qurucum ✅", url=f"tg://user?id={OWNER_ID}"),
         InlineKeyboardButton(text="☁️Mənbə☁️", callback_data="source_"),
     ],
 ]
@@ -204,7 +204,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_sticker(
-                "CAACAgUAAxkBAAJYsmLWRvm70cE-mmxSNCovEf4v1ueJAAIcCAACbMK4VuL4EmZEkq8WKQQ"
+                "CAACAgIAAxkBAAEBwl5mLUPTQHOAupPbSY4X1D3eUd3l-AACKgsAAp_oOUu9V8Lq7GCYKB4E"
             )
             update.effective_message.reply_text(
                 PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
