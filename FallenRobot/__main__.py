@@ -92,7 +92,7 @@ buttons = [
         InlineKeyboardButton(text="Kömək & Əmirlərim", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="❄ ᴀʙᴏᴜᴛ ❄" callback_data="fallen_"),
+        InlineKeyboardButton(text="Haqqımda", allback_data="fallen_"),
         InlineKeyboardButton(text="Kömək Qrupu", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
