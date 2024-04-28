@@ -92,7 +92,7 @@ buttons = [
         InlineKeyboardButton(text="Kömək & Əmirlərim", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="About" callback_data="fallen_"),
+        InlineKeyboardButton(text="❄ ᴀʙᴏᴜᴛ ❄" callback_data="fallen_"),
         InlineKeyboardButton(text="Kömək Qrupu", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
@@ -370,7 +370,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                             text="Köməkçi Qrup", callback_data="fallen_support"
                         ),
                         InlineKeyboardButton(
-                            text="ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"
+                            text="Əmirlər", callback_data="help_back"
                         ),
                     ],
                     [
